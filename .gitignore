@@ -6,4 +6,4 @@
 GenAppBli/bin
 GenAppService/WebContent/WEB-INF/classes
 GenAppService/WebContent/WEB-INF/lib
-GenAppService/MyWarFile.war
+output

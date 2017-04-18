@@ -194,7 +194,7 @@
 		<antcall target="build" />
 	</target>
 	<target name="war">
-		<war destfile="MyWarFile.war" webxml="WebContent/WEB-INF/web.xml" update="true">
+		<war destfile="output/MyWarFile.war" webxml="WebContent/WEB-INF/web.xml" update="true">
 			<classes dir="WebContent\WEB-INF\classes" />
 			<fileset dir="WebContent">
 				<exclude name="WEB-INF/web.xml" />

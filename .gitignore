@@ -1,0 +1,9 @@
+# IntelliJ
+.idea
+*iml
+
+# compiled output
+GenAppBli/bin
+GenAppService/WebContent/WEB-INF/classes
+GenAppService/WebContent/WEB-INF/lib
+GenAppService/MyWarFile.war

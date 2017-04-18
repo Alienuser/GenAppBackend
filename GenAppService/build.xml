@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- WARNING: Eclipse auto-generated file.
+              Any modifications will be overwritten.
+              To include a user specific buildfile here, simply create one in the same
+              directory with the processing instruction <?eclipse.ant.import?>
+              as the first entry and export the buildfile again. -->
+<project basedir="." default="build" name="GenAppService">
+	<property environment="env" />
+	<property name="ECLIPSE_HOME" value="~/IBM/zOS_Explorer/" />
+	<property name="GenAppBli.location" value="../GenAppBli" />
+	<property name="debuglevel" value="source,lines,vars" />
+	<property name="target" value="1.7" />
+	<property name="source" value="1.7" />
+	<path id="Web App Libraries.libraryclasspath">
+		<pathelement location="../GenAppBli" />
+	</path>
+	<path id="EAR Libraries.libraryclasspath" />
+	<path id="Liberty JVM Server Libraries (WLP 16.0.0.3, CICS TS 5.3).libraryclasspath">
+		<pathelement location="../GenAppBli/libs/cics53/org.eclipse.osgi.jar" />
+		<pathelement location="../GenAppBli/libs/cics53/com.ibm.cics.server.pipeline.jar" />
+		<pathelement location="../GenAppBli/libs/cics53/com.ibm.record.jar" />
+		<pathelement location="../GenAppBli/libs/cics53/com.ibm.cics.server.jar" />
+		<pathelement location="../GenAppBli/libs/cics53/com.ibm.ws.org.apache.felix.scr.1.7_1.0.3.jar" />
+		<pathelement location="../GenAppBli/libs/cics53/com.ibm.cics.php_dummy_1.0.0.jar" />
+		<pathelement location="../GenAppBli/libs/liberty8557/spec/com.ibm.ws.javaee.batch.1.0_1.0.14.jar" />
+		<pathelement location="../GenAppBli/libs/liberty8557/spec/com.ibm.ws.org.osgi.service.http.1.2.1_1.0.14.jar" />
+		<pathelement location="../GenAppBli/libs/liberty8557/spec/com.ibm.ws.javaee.jms.2.0_1.0.14.jar" />
+		<pathelement location="../GenAppBli/libs/liberty8557/spec/com.ibm.ws.prereq.wsdl4j.api_1.0.14.jar" />
+		<pathelement location="../GenAppBli/libs/liberty8557/spec/com.ibm.ws.javaee.transaction.1.1_1.0.14.jar" />
+		<pathelement location="../GenAppBli/libs/liberty8557/spec/com.ibm.ws.javaee.servlet.3.0_1.0.14.jar" />
+		<pathelement location="../GenAppBli/libs/liberty8557/spec/com.ibm.ws.javaee.jacc.1.5_1.0.14.jar" />
+		<pathelement location="../GenAppBli/libs/liberty8557/spec/com.ibm.ws.javaee.el.3.0_1.0.14.jar" />
+		<pathelement location="../GenAppBli/libs/liberty8557/spec/com.ibm.ws.javaee.jsf.tld.2.0_1.1.14.jar" />
+		<pathelement location="../GenAppBli/libs/liberty8557/spec/com.ibm.ws.javaee.mail.1.5_1.0.14.jar" />
+		<pathelement location="../GenAppBli/libs/liberty8557/spec/com.ibm.ws.javaee.websocket.1.1_1.0.14.jar" />
+		<pathelement location="../GenAppBli/libs/liberty8557/spec/com.ibm.ws.javaee.interceptor.1.1_1.0.14.jar" />
+		<pathelement location="../GenAppBli/libs/liberty8557/spec/com.ibm.ws.javaee.jaxrs.2.0_1.0.14.jar" />
+		<pathelement location="../GenAppBli/libs/liberty8557/spec/com.ibm.ws.javaee.jaxb.2.2_1.0.14.jar" />
+		<pathelement location="../GenAppBli/libs/liberty8557/spec/com.ibm.ws.javaee.validation.1.1_1.0.14.jar" />
+		<pathelement location="../GenAppBli/libs/liberty8557/spec/com.ibm.ws.org.osgi.service.blueprint.1.0.2_1.0.14.jar" />
+		<pathelement location="../GenAppBli/libs/liberty8557/spec/com.ibm.ws.javaee.annotation.1.1_1.0.14.jar" />
+		<pathelement location="../GenAppBli/libs/liberty8557/spec/com.ibm.ws.java.mediaServerControl.1.0_1.0.14.jar" />
+		<pathelement location="../GenAppBli/libs/liberty8557/spec/com.ibm.ws.javaee.cdi.1.2_1.2.14.jar" />
+		<pathelement location="../GenAppBli/libs/liberty8557/spec/com.ibm.ws.org.osgi.service.cm.1.5.0_1.0.14.jar" />
+		<pathelement location="../GenAppBli/libs/liberty8557/spec/com.ibm.ws.javaee.annotation.1.2_1.0.14.jar" />
+		<pathelement location="../GenAppBli/libs/liberty8557/spec/com.ibm.ws.javaee.management.j2ee.1.1_1.0.14.jar" />
+		<pathelement location="../GenAppBli/libs/liberty8557/spec/com.ibm.ws.org.osgi.service.component.1.3.0_1.0.14.jar" />
+		<pathelement location="../GenAppBli/libs/liberty8557/spec/com.ibm.ws.javaee.jsp.tld.2.2_1.2.14.jar" />
+		<pathelement location="../GenAppBli/libs/liberty8557/spec/com.ibm.ws.javaee.jsf.2.0_1.0.14.jar" />
+		<pathelement location="../GenAppBli/libs/liberty8557/spec/com.ibm.ws.javaee.jaxws.2.2_1.0.14.jar" />
+		<pathelement location="../GenAppBli/libs/liberty8557/spec/com.ibm.ws.javaee.jsonp.1.0_1.0.14.jar" />
+		<pathelement location="../GenAppBli/libs/liberty8557/spec/com.ibm.ws.javaee.wsdl4j.1.2_1.0.14.jar" />
+		<pathelement location="../GenAppBli/libs/liberty8557/spec/com.ibm.ws.org.osgi.core.6.0.0_1.0.14.jar" />
+		<pathelement location="../GenAppBli/libs/liberty8557/spec/com.ibm.ws.javaee.interceptor.1.2_1.0.14.jar" />
+		<pathelement location="../GenAppBli/libs/liberty8557/spec/com.ibm.ws.javaee.ejb.3.1_1.0.14.jar" />
+		<pathelement location="../GenAppBli/libs/liberty8557/spec/com.ibm.ws.java.sipServlet.1.1_1.0.14.jar" />
+		<pathelement location="../GenAppBli/libs/liberty8557/spec/com.ibm.ws.javaee.jsp.2.3_1.0.14.jar" />
+		<pathelement location="../GenAppBli/libs/liberty8557/spec/com.ibm.ws.javaee.websocket.1.0_1.0.14.jar" />
+		<pathelement location="../GenAppBli/libs/liberty8557/spec/com.ibm.ws.javaee.persistence.2.0_1.0.14.jar" />
+		<pathelement location="../GenAppBli/libs/liberty8557/spec/com.ibm.ws.javaee.jms.1.1_1.0.14.jar" />
+		<pathelement location="../GenAppBli/libs/liberty8557/spec/com.ibm.ws.javaee.transaction.1.2_1.0.14.jar" />
+		<pathelement location="../GenAppBli/libs/liberty8557/spec/com.ibm.ws.javaee.jaspic.1.1_1.0.14.jar" />
+		<pathelement location="../GenAppBli/libs/liberty8557/spec/com.ibm.ws.org.osgi.service.http.whiteboard.1.0.0_1.0.14.jar" />
+		<pathelement location="../GenAppBli/libs/liberty8557/spec/com.ibm.ws.javaee.jsf.2.2_1.0.14.jar" />
+		<pathelement location="../GenAppBli/libs/liberty8557/spec/com.ibm.ws.javaee.el.2.2_1.0.14.jar" />
+		<pathelement location="../GenAppBli/libs/liberty8557/spec/com.ibm.ws.javaee.connector.1.6_1.0.14.jar" />
+		<pathelement location="../GenAppBli/libs/liberty8557/spec/com.ibm.ws.javaee.cdi.1.0_1.0.14.jar" />
+		<pathelement location="../GenAppBli/libs/liberty8557/spec/com.ibm.ws.javaee.validation.1.0_1.0.14.jar" />
+		<pathelement location="../GenAppBli/libs/liberty8557/spec/com.ibm.ws.javaee.jsp.2.2_1.0.14.jar" />
+		<pathelement location="../GenAppBli/libs/liberty8557/spec/com.ibm.ws.javaee.jaxrs.1.1_1.0.14.jar" />
+		<pathelement location="../GenAppBli/libs/liberty8557/spec/com.ibm.ws.javaee.jstl.1.2_1.0.14.jar" />
+		<pathelement location="../GenAppBli/libs/liberty8557/spec/com.ibm.ws.javaee.concurrent.1.0_1.0.14.jar" />
+		<pathelement location="../GenAppBli/libs/liberty8557/spec/com.ibm.ws.javaee.servlet.3.1_1.0.14.jar" />
+		<pathelement location="../GenAppBli/libs/liberty8557/spec/com.ibm.ws.javaee.connector.1.7_1.0.14.jar" />
+		<pathelement location="../GenAppBli/libs/liberty8557/spec/com.ibm.ws.javaee.persistence.dev.2.1_1.0.14.jar" />
+		<pathelement location="../GenAppBli/libs/liberty8557/spec/com.ibm.ws.javaee.ejb.3.2_1.0.14.jar" />
+		<pathelement location="../GenAppBli/libs/liberty8557/third-party/com.ibm.ws.jpa_1.2.14.jar" />
+		<pathelement location="../GenAppBli/libs/liberty8557/third-party/com.ibm.websphere.appserver.thirdparty.jpa_1.3.14.jar" />
+		<pathelement location="../GenAppBli/libs/liberty8557/third-party/com.ibm.websphere.appserver.thirdparty.eba.jndi_1.0.14.jar" />
+		<pathelement location="../GenAppBli/libs/liberty8557/third-party/com.ibm.websphere.appserver.thirdparty.mail_1.0.14.jar" />
+		<pathelement location="../GenAppBli/libs/liberty8557/third-party/com.ibm.websphere.appserver.thirdparty.jaxrs_1.0.14.jar" />
+		<pathelement location="../GenAppBli/libs/liberty8557/third-party/com.ibm.websphere.appserver.thirdparty.eclipselink_1.0.14.jar" />
+		<pathelement location="../GenAppBli/libs/liberty8557/third-party/com.ibm.ws.jaxrs.api_1.0.14.jar" />
+		<pathelement location="../GenAppBli/libs/liberty8557/third-party/com.ibm.websphere.appserver.thirdparty.eba.tx_1.0.14.jar" />
+		<pathelement location="../GenAppBli/libs/liberty8557/third-party/com.ibm.websphere.appserver.thirdparty.cdi_1.0.14.jar" />
+		<pathelement location="../GenAppBli/libs/liberty8557/third-party/com.ibm.websphere.appserver.thirdparty.swagger.annotations_1.0.14.jar" />
+		<pathelement location="../GenAppBli/libs/liberty8557/third-party/com.ibm.websphere.appserver.thirdparty.blueprint_1.2.14.jar" />
+		<pathelement location="../GenAppBli/libs/liberty8557/ibm/com.ibm.websphere.appserver.api.dynamicRouting_1.2.14.jar" />
+		<pathelement location="../GenAppBli/libs/liberty8557/ibm/com.ibm.websphere.appserver.api.saml20_1.1.14.jar" />
+		<pathelement location="../GenAppBli/libs/liberty8557/ibm/com.ibm.websphere.appserver.api.messaging_1.0.14.jar" />
+		<pathelement location="../GenAppBli/libs/liberty8557/ibm/com.ibm.websphere.appserver.api.distributedMap_2.0.14.jar" />
+		<pathelement location="../GenAppBli/libs/liberty8557/ibm/com.ibm.websphere.appserver.api.sipServlet.1.1_1.0.14.jar" />
+		<pathelement location="../GenAppBli/libs/liberty8557/ibm/com.ibm.websphere.appserver.api.monitor_1.1.14.jar" />
+		<pathelement location="../GenAppBli/libs/liberty8557/ibm/com.ibm.websphere.appserver.api.jacc_1.0.14.jar" />
+		<pathelement location="../GenAppBli/libs/liberty8557/ibm/com.ibm.websphere.appserver.api.collectiveController_1.5.14.jar" />
+		<pathelement location="../GenAppBli/libs/liberty8557/ibm/com.ibm.websphere.appserver.api.webcontainer.security.app_1.1.14.jar" />
+		<pathelement location="../GenAppBli/libs/liberty8557/ibm/com.ibm.websphere.appserver.api.json_1.0.14.jar" />
+		<pathelement location="../GenAppBli/libs/liberty8557/ibm/com.ibm.websphere.appserver.api.sessionstats_1.0.14.jar" />
+		<pathelement location="../GenAppBli/libs/liberty8557/ibm/com.ibm.websphere.appserver.api.zosRequestLogging_1.0.14.jar" />
+		<pathelement location="../GenAppBli/libs/liberty8557/ibm/com.ibm.websphere.appserver.api.scalingMember_1.0.14.jar" />
+		<pathelement location="../GenAppBli/libs/liberty8557/ibm/com.ibm.websphere.appserver.api.oidc_1.0.14.jar" />
+		<pathelement location="../GenAppBli/libs/liberty8557/ibm/com.ibm.websphere.appserver.api.zosLocalAdapters_1.0.14.jar" />
+		<pathelement location="../GenAppBli/libs/liberty8557/ibm/com.ibm.websphere.appserver.api.hpel_2.0.14.jar" />
+		<pathelement location="../GenAppBli/libs/liberty8557/ibm/com.ibm.websphere.appserver.api.wsoc_1.0.14.jar" />
+		<pathelement location="../GenAppBli/libs/liberty8557/ibm/com.ibm.websphere.appserver.api.ssl_1.1.14.jar" />
+		<pathelement location="../GenAppBli/libs/liberty8557/ibm/com.ibm.websphere.appserver.api.oauth_1.2.14.jar" />
+		<pathelement location="../GenAppBli/libs/liberty8557/ibm/com.ibm.websphere.appserver.api.scalingController_1.0.14.jar" />
+		<pathelement location="../GenAppBli/libs/liberty8557/ibm/com.ibm.websphere.appserver.api.servlet_1.1.14.jar" />
+		<pathelement location="../GenAppBli/libs/liberty8557/ibm/com.ibm.websphere.appserver.api.authData_1.0.14.jar" />
+		<pathelement location="../GenAppBli/libs/liberty8557/ibm/com.ibm.websphere.appserver.api.jaxrs20_1.0.14.jar" />
+		<pathelement location="../GenAppBli/libs/liberty8557/ibm/com.ibm.websphere.appserver.api.constrainedDelegation_1.0.14.jar" />
+		<pathelement location="../GenAppBli/libs/liberty8557/ibm/com.ibm.websphere.appserver.api.security.authorization.saf_1.0.14.jar" />
+		<pathelement location="../GenAppBli/libs/liberty8557/ibm/com.ibm.websphere.appserver.api.sipServletSecurity.1.0_1.0.14.jar" />
+		<pathelement location="../GenAppBli/libs/liberty8557/ibm/com.ibm.websphere.appserver.api.transaction_1.1.14.jar" />
+		<pathelement location="../GenAppBli/libs/liberty8557/ibm/com.ibm.websphere.appserver.api.restConnector_1.2.14.jar" />
+		<pathelement location="../GenAppBli/libs/liberty8557/ibm/com.ibm.websphere.appserver.api.webCache_1.1.14.jar" />
+		<pathelement location="../GenAppBli/libs/liberty8557/ibm/com.ibm.websphere.appserver.api.security_1.2.14.jar" />
+		<pathelement location="../GenAppBli/libs/liberty8557/ibm/com.ibm.websphere.appserver.api.jaxrs_1.0.14.jar" />
+		<pathelement location="../GenAppBli/libs/liberty8557/ibm/com.ibm.websphere.appserver.api.j2eemanagement_1.1.14.jar" />
+		<pathelement location="../GenAppBli/libs/liberty8557/ibm/com.ibm.websphere.appserver.api.securityClient_1.0.14.jar" />
+		<pathelement location="../GenAppBli/libs/liberty8557/ibm/com.ibm.websphere.appserver.api.basics_1.2.14.jar" />
+		<pathelement location="../GenAppBli/libs/liberty8557/ibm/com.ibm.websphere.appserver.api.ejbcontainer_1.0.14.jar" />
+		<pathelement location="../GenAppBli/libs/liberty8557/ibm/com.ibm.websphere.appserver.api.endpoint_1.0.14.jar" />
+		<pathelement location="../GenAppBli/libs/liberty8557/ibm/com.ibm.websphere.appserver.api.persistence_1.0.14.jar" />
+		<pathelement location="../GenAppBli/libs/liberty8557/ibm/com.ibm.websphere.appserver.api.security.registry.saf_1.0.14.jar" />
+		<pathelement location="../GenAppBli/libs/liberty8557/ibm/com.ibm.websphere.appserver.api.config_1.2.14.jar" />
+		<pathelement location="../GenAppBli/libs/liberty8557/ibm/com.ibm.websphere.appserver.api.clusterMember_1.0.14.jar" />
+		<pathelement location="../GenAppBli/libs/liberty8557/ibm/com.ibm.websphere.appserver.api.kernel.service_1.0.14.jar" />
+		<pathelement location="../GenAppBli/libs/liberty8557/ibm/com.ibm.websphere.appserver.api.connectionpool_1.0.14.jar" />
+		<pathelement location="../GenAppBli/libs/cics53liberty/com.ibm.cics.wlp.jca.local.eci.interface.jar" />
+	</path>
+	<path id="GenAppBli.classpath">
+		<pathelement location="${GenAppBli.location}/bin" />
+		<path refid="EAR Libraries.libraryclasspath" />
+		<pathelement location="${GenAppBli.location}/jzos_recgen.jar" />
+		<path refid="Liberty JVM Server Libraries (WLP 16.0.0.3, CICS TS 5.3).libraryclasspath" />
+	</path>
+	<path id="GenAppService.classpath">
+		<pathelement location="WebContent/WEB-INF/classes" />
+		<path refid="Web App Libraries.libraryclasspath" />
+		<path refid="EAR Libraries.libraryclasspath" />
+		<path refid="GenAppBli.classpath" />
+		<path refid="Liberty JVM Server Libraries (WLP 16.0.0.3, CICS TS 5.3).libraryclasspath" />
+	</path>
+	<target name="init">
+		<mkdir dir="WebContent/WEB-INF/classes" />
+		<copy includeemptydirs="false" todir="WebContent/WEB-INF/classes">
+			<fileset dir="src">
+				<exclude name="**/*.launch" />
+				<exclude name="**/*.java" />
+			</fileset>
+		</copy>
+		<copy includeemptydirs="false" todir="WebContent/WEB-INF/classes">
+			<fileset dir=".apt_generated">
+				<exclude name="**/*.launch" />
+				<exclude name="**/*.java" />
+			</fileset>
+		</copy>
+	</target>
+	<target name="clean">
+		<delete dir="WebContent/WEB-INF/classes" />
+	</target>
+	<target depends="clean" name="cleanall">
+		<ant antfile="build.xml" dir="${GenAppBli.location}" inheritAll="false" target="clean" />
+	</target>
+	<target depends="build-subprojects,build-project,war" name="build" />
+	<target name="build-subprojects">
+		<ant antfile="build.xml" dir="${GenAppBli.location}" inheritAll="false" target="build-project">
+			<propertyset>
+				<propertyref name="build.compiler" />
+			</propertyset>
+		</ant>
+	</target>
+	<target depends="init" name="build-project">
+		<echo message="${ant.project.name}: ${ant.file}" />
+		<javac debug="true" debuglevel="${debuglevel}" destdir="WebContent/WEB-INF/classes" includeantruntime="false" source="${source}" target="${target}">
+			<src path="src" />
+			<src path=".apt_generated" />
+			<classpath refid="GenAppService.classpath" />
+		</javac>
+	</target>
+	<target description="Build all projects which reference this project. Useful to propagate changes." name="build-refprojects" />
+	<target description="copy Eclipse compiler jars to ant lib directory" name="init-eclipse-compiler">
+		<copy todir="${ant.library.dir}">
+			<fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar" />
+		</copy>
+		<unzip dest="${ant.library.dir}">
+			<patternset includes="jdtCompilerAdapter.jar" />
+			<fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar" />
+		</unzip>
+	</target>
+	<target description="compile project with Eclipse compiler" name="build-eclipse-compiler">
+		<property name="build.compiler" value="org.eclipse.jdt.core.JDTCompilerAdapter" />
+		<antcall target="build" />
+	</target>
+	<target name="war">
+		<war destfile="MyWarFile.war" webxml="WebContent/WEB-INF/web.xml" update="true">
+			<classes dir="WebContent\WEB-INF\classes" />
+			<fileset dir="WebContent">
+				<exclude name="WEB-INF/web.xml" />
+			</fileset>
+		</war>
+	</target>
+</project>

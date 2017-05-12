@@ -15,19 +15,19 @@ package com.ibm.cics.genapp;
 public class GenAppException extends Exception {
 
 	/*
-	 * This subclass of Exception is used for GenApp specific Exceptions.
+     * This subclass of Exception is used for GenApp specific Exceptions.
 	 * It is further extended to provide more granular Exceptions for different
 	 * types of Exception which may occur (System, Application, Business). 
 	 */
-	
-	private static final long serialVersionUID = 1L;
 
-	public GenAppException(String arg0) {
-		super(arg0);
-	}
+    private static final long serialVersionUID = 1L;
 
-	public GenAppException(Throwable arg0) {
-		super(arg0);
-	}
-	
+    public GenAppException(String arg0) {
+        super(arg0);
+    }
+
+    public GenAppException(Throwable arg0) {
+        super(arg0);
+    }
+
 }

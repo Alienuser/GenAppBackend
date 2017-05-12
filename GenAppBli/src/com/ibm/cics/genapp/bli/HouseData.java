@@ -12,72 +12,71 @@ package com.ibm.cics.genapp.bli;
  * 
  */
 
-
 public class HouseData extends PolicyData {
 
-	private String PropertyType;
-	private int Bedrooms;
-	private int HouseValue;
-	private String HouseName;
-	private int HouseNumber;
-	private String Postcode;
+    private String PropertyType;
+    private int Bedrooms;
+    private int HouseValue;
+    private String HouseName;
+    private int HouseNumber;
+    private String Postcode;
 
-	public HouseData() {
-		super(PolicyType.House);
-		PropertyType = "";
-		Bedrooms = 0;
-		HouseValue = 0;
-		HouseName = "";
-		HouseNumber = 0;
-		Postcode = "";
-	}
+    public HouseData() {
+        super(PolicyType.House);
+        PropertyType = "";
+        Bedrooms = 0;
+        HouseValue = 0;
+        HouseName = "";
+        HouseNumber = 0;
+        Postcode = "";
+    }
 
-	public String getPropertyType() {
-		return PropertyType;
-	}
+    public String getPropertyType() {
+        return PropertyType;
+    }
 
-	public void setPropertyType(String propertyType) {
-		PropertyType = propertyType;
-	}
+    public void setPropertyType(String propertyType) {
+        PropertyType = propertyType;
+    }
 
-	public int getBedrooms() {
-		return Bedrooms;
-	}
+    public int getBedrooms() {
+        return Bedrooms;
+    }
 
-	public void setBedrooms(int bedrooms) {
-		Bedrooms = bedrooms;
-	}
+    public void setBedrooms(int bedrooms) {
+        Bedrooms = bedrooms;
+    }
 
-	public int getHouseValue() {
-		return HouseValue;
-	}
+    public int getHouseValue() {
+        return HouseValue;
+    }
 
-	public void setHouseValue(int houseValue) {
-		HouseValue = houseValue;
-	}
+    public void setHouseValue(int houseValue) {
+        HouseValue = houseValue;
+    }
 
-	public String getHouseName() {
-		return HouseName;
-	}
+    public String getHouseName() {
+        return HouseName;
+    }
 
-	public void setHouseName(String houseName) {
-		HouseName = houseName;
-	}
+    public void setHouseName(String houseName) {
+        HouseName = houseName;
+    }
 
-	public int getHouseNumber() {
-		return HouseNumber;
-	}
+    public int getHouseNumber() {
+        return HouseNumber;
+    }
 
-	public void setHouseNumber(int houseNumber) {
-		HouseNumber = houseNumber;
-	}
+    public void setHouseNumber(int houseNumber) {
+        HouseNumber = houseNumber;
+    }
 
-	public String getPostcode() {
-		return Postcode;
-	}
+    public String getPostcode() {
+        return Postcode;
+    }
 
-	public void setPostcode(String postcode) {
-		Postcode = postcode;
-	}
+    public void setPostcode(String postcode) {
+        Postcode = postcode;
+    }
 
 }

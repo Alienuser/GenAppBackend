@@ -12,73 +12,70 @@ package com.ibm.cics.genapp.bli;
  * 
  */
 
-
 import java.util.Calendar;
 import java.util.GregorianCalendar;
 
-public class CarData  extends PolicyData {
+public class CarData extends PolicyData {
 
-	private String CarMake;
-	private String CarModel;
-	private int CarValue;
-	private String Registration;
-	private Calendar Manufactured;
-	
-	public CarData() {
-		super(PolicyType.Car);
-		CarMake = "";
-		CarModel = "";
-		CarValue = 0;
-		Registration = "";
-		Manufactured = new GregorianCalendar();
-	}
+    private String CarMake;
+    private String CarModel;
+    private int CarValue;
+    private String Registration;
+    private Calendar Manufactured;
 
-	public String getCarMake() {
-		return CarMake;
-	}
+    public CarData() {
+        super(PolicyType.Car);
+        CarMake = "";
+        CarModel = "";
+        CarValue = 0;
+        Registration = "";
+        Manufactured = new GregorianCalendar();
+    }
 
-	public void setCarMake(String carMake) {
-		CarMake = carMake;
-	}
+    public String getCarMake() {
+        return CarMake;
+    }
 
-	public String getCarModel() {
-		return CarModel;
-	}
+    public void setCarMake(String carMake) {
+        CarMake = carMake;
+    }
 
-	public void setCarModel(String carModel) {
-		CarModel = carModel;
-	}
+    public String getCarModel() {
+        return CarModel;
+    }
 
-	public int getCarValue() {
-		return CarValue;
-	}
+    public void setCarModel(String carModel) {
+        CarModel = carModel;
+    }
 
-	public void setCarValue(int carValue) {
-		CarValue = carValue;
-	}
+    public int getCarValue() {
+        return CarValue;
+    }
 
-	public String getRegistration() {
-		return Registration;
-	}
+    public void setCarValue(int carValue) {
+        CarValue = carValue;
+    }
 
-	public void setRegistration(String registration) {
-		Registration = registration;
-	}
+    public String getRegistration() {
+        return Registration;
+    }
 
-	/**
-	 * @return the manufactured
-	 */
-	public Calendar getManufactured() {
-		return Manufactured;
-	}
+    public void setRegistration(String registration) {
+        Registration = registration;
+    }
 
-	/**
-	 * @param manufactured the manufactured to set
-	 */
-	public void setManufactured(Calendar manufactured) {
-		Manufactured = manufactured;
-	}
-	
-	
-	
+    /**
+     * @return the manufactured
+     */
+    public Calendar getManufactured() {
+        return Manufactured;
+    }
+
+    /**
+     * @param manufactured the manufactured to set
+     */
+    public void setManufactured(Calendar manufactured) {
+        Manufactured = manufactured;
+    }
+
 }

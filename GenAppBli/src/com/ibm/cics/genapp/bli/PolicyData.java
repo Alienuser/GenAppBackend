@@ -12,61 +12,60 @@ package com.ibm.cics.genapp.bli;
  * 
  */
 
-
 import java.util.Calendar;
 import java.util.GregorianCalendar;
 
 public class PolicyData {
 
-	private PolicyType policyType;
-	private int policyNumber; // Required to support list function.
-	private Calendar issueDate = new GregorianCalendar(); // Today - to satisfy SQL.
-	private Calendar expiryDate = new GregorianCalendar(); // Today
-	
-	public PolicyData(PolicyType policyType) {
-		super();
-		policyNumber = 0; // Invalid value set by initialization
-		this.policyType = policyType;
-	}
-	
-	public PolicyType getPolicyType() {
-		return policyType;
-	}
+    private PolicyType policyType;
+    private int policyNumber; // Required to support list function.
+    private Calendar issueDate = new GregorianCalendar(); // Today - to satisfy SQL.
+    private Calendar expiryDate = new GregorianCalendar(); // Today
 
-	public int getPolicyNumber() {
-		return policyNumber;
-	}
+    public PolicyData(PolicyType policyType) {
+        super();
+        policyNumber = 0; // Invalid value set by initialization
+        this.policyType = policyType;
+    }
 
-	public void setPolicyNumber(int policyNumber) {
-		this.policyNumber = policyNumber;
-	}
+    public PolicyType getPolicyType() {
+        return policyType;
+    }
 
-	/**
-	 * @return the issueDate
-	 */
-	public Calendar getIssueDate() {
-		return issueDate;
-	}
+    public int getPolicyNumber() {
+        return policyNumber;
+    }
 
-	/**
-	 * @param issueDate the issueDate to set
-	 */
-	public void setIssueDate(Calendar issueDate) {
-		this.issueDate = issueDate;
-	}
+    public void setPolicyNumber(int policyNumber) {
+        this.policyNumber = policyNumber;
+    }
 
-	/**
-	 * @return the expiryDate
-	 */
-	public Calendar getExpiryDate() {
-		return expiryDate;
-	}
+    /**
+     * @return the issueDate
+     */
+    public Calendar getIssueDate() {
+        return issueDate;
+    }
 
-	/**
-	 * @param expiryDate the expiryDate to set
-	 */
-	public void setExpiryDate(Calendar expiryDate) {
-		this.expiryDate = expiryDate;
-	}
-	
+    /**
+     * @param issueDate the issueDate to set
+     */
+    public void setIssueDate(Calendar issueDate) {
+        this.issueDate = issueDate;
+    }
+
+    /**
+     * @return the expiryDate
+     */
+    public Calendar getExpiryDate() {
+        return expiryDate;
+    }
+
+    /**
+     * @param expiryDate the expiryDate to set
+     */
+    public void setExpiryDate(Calendar expiryDate) {
+        this.expiryDate = expiryDate;
+    }
+
 }

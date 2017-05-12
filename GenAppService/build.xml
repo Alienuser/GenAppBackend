@@ -204,7 +204,7 @@
         </javac>
     </target>
     <target name="war">
-        <war destfile="output/MyWarFile.war" webxml="WebContent/WEB-INF/web.xml" update="true">
+        <war destfile="output/GenAppService.war" webxml="WebContent/WEB-INF/web.xml" update="true">
             <classes dir="WebContent\WEB-INF\classes"/>
             <fileset dir="WebContent">
                 <exclude name="WEB-INF/web.xml"/>

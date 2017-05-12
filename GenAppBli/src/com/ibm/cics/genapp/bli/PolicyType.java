@@ -13,4 +13,4 @@ package com.ibm.cics.genapp.bli;
  */
 
 
-public enum PolicyType { Car, House } 
+public enum PolicyType{Car,House}
